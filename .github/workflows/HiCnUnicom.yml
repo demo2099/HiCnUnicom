@@ -18,6 +18,8 @@ jobs:
           run: |
             time=$(curl -s "http://quan.suning.com/getSysTime.do")
             echo -e "当前时间：\n${time}"
+            echo -e "appid：\n${{ secrets.APPID }}"
+
  
         - name: 联通掌厅签到
           env:
@@ -29,6 +31,7 @@ jobs:
             
             for u in $user
             do
+              echo -e "appid:$appid"
               bash CnUnicom.sh ${u/,/ }
             done
 
