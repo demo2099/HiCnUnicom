@@ -13,7 +13,7 @@ username="$1"
 password="$2"
 echo "11用户密码:$1"
 echo "11密码:$2"
-echo "appid:${appid}"
+echo "appidsss:$appid"
 # 联通APP版本
 unicom_version=8.0100
 
